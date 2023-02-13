@@ -13,12 +13,4 @@ player.on('timeupdate', throttle(onPlay, 1000));
 
 player
   .setCurrentTime(localStorage.getItem(CURRENT_TIME))
-  .then(function () {})
-  .catch(function (error) {
-    switch (error.name) {
-      case 'RangeError':
-        break;
-      default:
-        break;
-    }
-  });
+
